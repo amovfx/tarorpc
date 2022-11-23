@@ -1,0 +1,23 @@
+{
+  "name": "tarorpc",
+  "version": "1.0.0",
+  "description": "An Rpc library for Lightning Lab's Taro",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "taro",
+    "rpc",
+    "grpc"
+  ],
+  "author": "amovfx",
+  "license": "MIT",
+  "dependencies": {
+    "@radar/lnrpc": "^0.11.1-beta.1"
+  }
+}

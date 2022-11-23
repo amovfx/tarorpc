@@ -1,0 +1,1 @@
+~/go/bin/lncli --network regtest --tlscertpath=~/git/tarorpc/docker/volumes/lnd/alice/tls.cert --macaroonpath=~/git/tarorpc/docker/volumes/lnd/alice/data/chain/bitcoin/regtest/admin.macaroon --rpcserver=localhost:10001 getinfo
