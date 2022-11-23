@@ -1,3 +1,6 @@
 [submodule "lnd"]
 	path = lnd
 	url = https://github.com/amovfx/lnd.git
+[submodule "taro"]
+	path = taro
+	url = https://github.com/amovfx/taro.git
