@@ -115,11 +115,6 @@ services:
     #   --lnd.tlspath=/home/lnd/.lnd/tls.cert --tarodir=/home/taro/.taro
     #   --rpclisten=0.0.0.0:10029 --lnd.host=alice:10009 --restlisten=0.0.0.0:8089 
 
-      
-
-  
-    #command: '/bin/bash -c "su-exec taro tarod --network=regtest --lnd.macaroonpath=/home/lnd/.lnd/data/chain/bitcoin/regtest/admin.macaroon --lnd.tlspath=/home/lnd/.lnd/tls.cert --tarodir=/home/taro/.taro --rpclisten=0.0.0.0:10029 --restlisten=0.0.0.0:8089 --lnd.host=alice:10009"'
-    #command: '/bin/bash -c "go run /app/cmd/tarod/main.go --network=regtest --lnd.macaroonpath=/home/lnd/.lnd/data/chain/bitcoin/regtest/admin.macaroon --lnd.tlspath=/home/lnd/.lnd/tls.cert --tarodir=/home/taro/.taro --rpclisten=0.0.0.0:10029 --restlisten=0.0.0.0:8089 --lnd.host=alice:10009"'
     volumes:
       - /Users/andrew/.polar/networks/2/volumes/lnd/alice:/home/lnd/.lnd
       - /Users/andrew/.polar/networks/2/volumes/taro/alice:/home/taro/.taro
@@ -128,6 +123,7 @@ services:
     expose:
       - '8089'
       - '10029'
+      - '2345'
     ports:
       - '8089:8089'
       - '10029:10029'
